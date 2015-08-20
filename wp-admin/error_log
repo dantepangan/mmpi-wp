@@ -1,0 +1,1 @@
+[18-Mar-2015 04:43:41 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 4304 bytes) in /home/mmpiadmin/public_html/wp-content/plugins/backupwordpress/vendor/symfony/finder/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php on line 60

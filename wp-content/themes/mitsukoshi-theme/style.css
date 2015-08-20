@@ -1,0 +1,2056 @@
+/*
+Theme Name: Mitsukoshi Theme
+Author: Lucid Dream Foundry
+Author URI: http://luciddreamfoundry.com/
+Description: A Theme designed exclisively for Mitsukoshi Motors
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: motorcycle, blue, white, one-column, two-columns, left-sidebar, flexible-width, fluid-layout, responsive-layout, custom-menu, featured-images
+ 
+
+*/
+
+/* loading screen */
+/*#load-screen {
+	background: #000;
+	opacity: 1;
+	position: fixed;
+	z-index: 50;
+	top:0px;
+	width: 100%;
+	height: 1600px;
+}*/
+
+/* Logo Style */
+#mitsulogo img {
+width: 200px;
+height: 52px;
+}
+
+/* Navigation Style */
+.navbar {
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+.paddy {
+	padding-top: 15px;
+}
+.nav:first-child {
+	padding-left:50px;
+}
+
+.navbar-default {
+
+
+  background: -webkit-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* W3C */
+        
+        
+	border-right: none;
+	border-left: none;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	box-shadow: 15px 0 15px rgba(0,0,0,0.8); 
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #6d6e70;
+	font-family: 'Titillium Web',sans-serif;
+	font-weight: 100;
+	font-size: 1.3em;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #3c82e7;
+	text-shadow:none;
+}
+
+
+#menu-container, #menu-container-fluid, .navbar-collapse {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+/* Homepage Slider */
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+}
+
+.fa.fa-angle-right {
+	position: absolute;
+	top: 40%;
+	right: 10%;
+}
+
+.fa.fa-angle-left {
+	position: absolute;
+	top: 40%;
+	left: 10%;
+}
+
+#home-slider {
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	margin-top: 55px;
+}
+
+
+.carousel-indicators li {
+	border: 1px solid rgba(255,255,255,0.5);
+}
+
+.carousel-indicators .active {
+	background-color: rgba(255,255,255,0.5);
+}
+
+.carousel-inner {
+	box-shadow: 0 0 15px rgba(0,0,0,0.8); 
+}
+
+/* Home Motorcycle Finder */
+
+.home-finder {
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+/* Bugetfinder & Motorcycle Search */
+
+#finders {
+	box-shadow:0 0 15px rgba(0,0,0,0.8);
+	padding-top: 35px;
+	padding-bottom: 80px;
+ 	background-color: #fff;
+}
+
+#finders .caret {
+	float: right;
+	margin-top: 7px;
+}
+
+
+#finders .dropdown-toggle:hover {
+	background-color: #3c82e7;
+	color: #fff;
+	border: none!important;
+}
+
+.search-header h3, .budget-header h3 {
+	font-family: 'Titillium Web',sans-serif;
+	font-weight: 400;
+	font-size: 2.3em;
+	color: #3c82e7;
+	padding-bottom: 15px;
+/*	text-shadow: 0 1px 2px rgba(0,0,0,.6);*/
+}
+
+.search-header h3 {
+	font-size: 2.4em;
+}
+
+
+/* Dropdown Styling */
+
+#finders .btn, #finders .dropdown-menu>li>a {
+	padding: 12px 15px;
+	font-family: 'Lato',sans-serif;
+	font-weight: 300;
+	color: #000;
+}
+
+#finders .btn {
+	margin-bottom: 2px;
+}
+
+
+.dropdown-menu, .btn {
+	border-radius: 0px;
+	border: 1px solid #3c82e7!important;
+	width: 400px;
+	font-size: 1.3em;
+	font-weight: 300;
+}
+
+.dropdown-menu {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  width: 100% !important;
+}
+
+.dropdown-menu>li>a {
+  padding: 12px 20px !important;
+  cursor: pointer;
+}
+
+.dropdown-menu .divider {
+  margin: 0 !important;
+}
+
+/* Search Button Styling */
+
+#moto-search-button, #budget-search-button {
+	margin-top: 10px;
+	padding: 12px 198px!important;
+	color: #fff!important;
+	text-transform: uppercase;
+	background-color: #3c82e7;
+	border: none;
+	border-bottom: 5px solid #185cbf;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	font-weight: 400!important;
+	border-radius: 4px;
+/*	border: 5px solid #3574c0;*/
+}
+
+#moto-search-button:hover, #budget-search-button:hover {
+	background-color: #00ff00;
+	border-bottom: 5px solid #00cc00;
+}
+
+/* Featured Bikes Styles */
+/* View All Button */
+
+/* Logos */
+.sym-logo img, .euro-logo img {
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+
+.sym-logo a, .euro-logo a {
+	text-decoration: none;
+	font-family: 'Lato',sans-serif;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	background-color: #f36412;
+	padding: 10px 20px 10px 20px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	float: right;
+	border-radius: 3px;
+	border-bottom: 3px solid #c84f0a;
+}
+
+.sym-logo a:hover {
+
+} 
+
+.euro-logo img {
+	padding-left: 5px;
+}
+
+#featured-bikes {
+	padding-bottom: 80px;
+	background: -webkit-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* IE10 */
+	background:      -o-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* Opera 11.10+ */
+	background:         linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* W3C */
+    box-shadow:0 0 15px rgba(0,0,0,0.8);  
+
+
+}
+
+#featured-bikes h3 {
+	font-family: 'Titillium Web',sans-serif;
+	font-weight: 400;
+	color: #fff;
+	font-size: 2.5em;
+	text-shadow: 0 1px 2px rgba(0,0,0,.8);
+	padding: 20px 0 10px 15px;
+	border-bottom: 2px solid #ff0000;
+}
+
+.featured-bike-intro h4, .featured-bike-intro p, .featured-bike-intro h5, .featured-bike-intro h6 {
+	font-family: 'Lato',sans-serif;
+	font-weight: 400;
+
+}
+
+.featured-bike-intro h4 {
+	color: #000;
+	text-transform: uppercase;
+	text-align: left;
+	padding-bottom: 10px;
+	border-bottom: 4px solid #3c82e7;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+
+.featured-bike-intro h5 {
+	text-align: left;
+	font-size: 1.1em;
+}
+
+.featured-bike-intro h5 span {
+	font-size: 0.7em;
+	color: #3c82e7;
+}
+
+.featured-bike-intro h6 {
+	font-size: 1.3em;
+	font-weight: 300;
+	text-align: left;
+	color: #ff0000;
+}
+
+.featured-bike-img img {
+	width: 80%;
+}
+
+.featured-bike-intro img {
+	border: 1px solid rgba(40,44,42,0.05);
+	border-bottom: none;
+}
+
+.featured-bike-intro p {
+	font-size: 1.1em!important;
+}
+
+.featured-mini-p p {
+	font-size: 0.8em!important;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #fff!important;
+	text-shadow: 0 1px 2px rgba(0,0,0,.8);
+	background-color: #29323c;
+	box-shadow:0 0 15px rgba(0,0,0,0.8);
+	width: 90%;
+}
+
+.featured-mini-p img {
+	width: 90%;
+}
+
+.cash-price p {
+	color: #2ecc71!important;
+	text-align: left;
+	font-size: 1.8em!important;
+}
+
+.cash-price p span {
+	color: #3c82e7;
+	font-size: 0.45em;
+	font-weight: 400;
+}
+
+.down-payment {
+	margin-bottom: 35px;
+	text-align: left;
+}
+
+.down-payment p {
+	color: #1abc9c!important;
+}
+
+.detail-button {
+	text-align: left;
+}
+
+.inquire-button a, .detail-button a, .monthly-modal a {
+	font-weight: 400;
+	font-size: 0.9em;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 21px 10px 21px;
+	text-shadow: 0 1px 2px rgba(0,0,0,.8);
+	border-radius: 3px;
+}
+
+.inquire-button {
+	text-align: right;
+}
+
+.inquire-button a {
+	background-color: #2ecc71;
+	border-bottom: 3px solid #27ae60;
+	font-size: 1.5em;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	padding: 10px 27px 10px 27px;
+}
+
+.detail-button a {
+	background-color: #3c82e7;
+	border-bottom: 3px solid #185cbf;
+}
+
+.monthly-modal a {
+	background-color: #e67e22;
+	border-bottom: 4px solid #e66800;
+}
+
+/* News Grid */
+
+.news-grid { 
+	border-top: 2px solid #ff0000;
+	border-bottom: 2px solid #3c82e7;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.news-grid h2 {
+	font-family: 'Titillium Web',sans-serif;
+	margin-bottom: 30px;
+	color: #3c82e7;
+}
+
+.news-grid h2 span {
+	color: #ff0000;
+}
+
+.news-grid h3, .news-grid h4 {
+	font-family: 'Lato',sans-serif;
+	font-weight: 300;
+}
+
+.news-grid h3 {
+	color: #3c82e7;
+	margin-top: 40px;
+	font-size: 2.3em;
+}
+
+.news-grid hr { 
+	display: block!important; 
+	height: 1px!important;
+    border: 0!important; 
+    border-top: 1px solid #3c82e7!important;
+    margin: 2em 0!important; 
+    padding: 0!important; 
+}
+
+
+.category {
+	color: #ff0000;
+}
+
+.news-grid a:hover, .news-grid a:focus {
+	text-decoration: none;
+	color: #ff0000!important;
+}
+
+.singlepost-title {
+	margin-top: 100px;
+	font-family: 'Titillium Web',sans-serif;
+	font-size: 2.3em;
+
+}
+
+.post-content img {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.author {
+	color: #3c82e7;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.news-list img {
+	width: 100%!important;
+	height: 165px;
+}
+
+/* Bubble Style */
+
+.bubble 
+{
+position: relative;
+left:198px;
+bottom: 5px;
+width: 290px;
+height: 10px;
+padding: 26px;
+background: #FFFFFF;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 8px;
+border: #000 solid 2px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 16px 13px 0;
+border-color: #FFFFFF transparent;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -16px;
+left: 232px;
+}
+
+.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 18px 18px 0;
+border-color: #000 transparent;
+display: block;
+width: 0;
+z-index: 0;
+bottom: -18px;
+left: 227px;
+}
+
+
+/* Featured Bikes Tabs*/
+
+.tabs {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	font-weight: 300;
+	font-size: 1.25em;
+}
+
+/* Nav */
+.tabs nav {
+	text-align: center;
+}
+
+.tabs nav ul {
+	position: relative;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1200px;
+	list-style: none;
+	-ms-box-orient: horizontal;
+	-ms-box-pack: center;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+
+.tabs nav ul li {
+	position: relative;
+	z-index: 1;
+	display: block;
+	margin: 0;
+	text-align: center;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.tabs nav a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 2.5;
+}
+
+.tabs nav a span {
+	vertical-align: middle;
+	font-size: 0.75em;
+}
+
+.tabs nav li.tab-current a {
+	color: #74777b;
+}
+
+.tabs nav a:focus {
+	outline: none;
+}
+
+/* Content */
+.content-wrap {
+	position: relative;
+}
+
+.content-wrap section {
+	display: none;
+	margin: 0 auto;
+	padding: 1em;
+	max-width: 1200px;
+	text-align: center;
+}
+
+.content-wrap section.content-current {
+	display: block;
+}
+
+.content-wrap section p {
+	margin: 0;
+	padding: 0.75em 0;
+	color: rgba(40,44,42,0.05);
+	font-weight: 900;
+	font-size: 4em;
+	line-height: 1;
+}
+
+/* Fallback */
+.no-js .content-wrap section {
+	display: block;
+	padding-bottom: 2em;
+	border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+.no-flexbox nav ul {
+	display: block;
+}
+
+.no-flexbox nav ul li {
+	min-width: 15%;
+	display: inline-block;
+}
+
+@media screen and (max-width: 58em) {
+	.tabs nav a.icon span {
+		display: none;
+	}
+	.tabs nav a:before {
+		margin-right: 0;
+	}
+}
+
+/*****************************/
+/* Flip */
+/*****************************/
+
+.tabs-style-flip {
+	max-width: 1200px;
+}
+
+.tabs-style-flip nav a {
+	padding: 0.5em 0;
+	color: #fff;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+	text-decoration: none;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.tabs-style-flip nav a:hover,
+.tabs-style-flip nav a:focus,
+.tabs-style-flip nav li.tab-current a {
+	color: #ff0000;
+	text-shadow:none;
+}
+
+.tabs-style-flip nav a span {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: 'Titillium Web',sans-serif;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+
+.tabs-style-flip nav a::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #f0f0f0;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s, background-color 0.3s;
+	transition: transform 0.3s, background-color 0.3s;
+	-webkit-transform: perspective(900px) rotate3d(1,0,0,90deg);
+	transform: perspective(900px) rotate3d(1,0,0,90deg);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-perspective-origin: 50% 100%;
+	perspective-origin: 50% 100%;
+}
+
+.tabs-style-flip nav li.tab-current a::after {
+	background-color: #fff;
+	-webkit-transform: perspective(900px) rotate3d(1,0,0,0deg);
+	transform: perspective(900px) rotate3d(1,0,0,0deg);
+}
+
+.tabs-style-flip .content-wrap {
+	background: #fff;
+}
+
+.hide-me {
+	padding-bottom: 30px;
+}
+
+
+/* Triangle and line */
+
+.tabs-style-linetriangle nav a {
+	overflow: visible;
+	border-bottom: 1px solid #3c82e7;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.tabs-style-linetriangle nav a span {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 1em;
+}
+
+.tabs-style-linetriangle nav li.tab-current a:after, 
+.tabs-style-linetriangle nav li.tab-current a:before {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	content: '';
+	pointer-events: none;
+}
+
+.tabs-style-linetriangle nav li.tab-current a:after {
+	margin-left: -10px;
+	border-width: 10px;
+	border-top-color: #fff;
+}
+
+.tabs-style-linetriangle nav li.tab-current a:before {
+	margin-left: -11px;
+	border-width: 11px;
+	border-top-color: #3c82e7;
+}
+
+@media screen and (max-width: 58em) {
+	.tabs-style-linetriangle nav {
+		font-size: 0.6em;
+	}
+}
+
+/* Helper Style */
+
+.center-element {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.odometer-container {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1.8em;
+	margin-right: 0px;
+	color: #fff;
+	box-shadow: 0 0 15px rgba(0,0,0,0.8);
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	border-top: 3px solid #185cbf;
+	background: -webkit-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* IE10 */
+	background:      -o-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* Opera 11.10+ */
+	background:         linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* W3C */    
+}
+
+/* Contact Styles */
+
+.contact-modal-container {
+  background: -webkit-linear-gradient(90deg, #fe8c00 10%, #f83600 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #fe8c00 10%, #f83600 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #fe8c00 10%, #f83600 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #fe8c00 10%, #f83600 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #fe8c00 10%, #f83600 90%); /* W3C */     
+  box-shadow: 0 0 15px rgba(0,0,0,0.8);   
+  text-align: center;
+}
+
+.contact-modal-container button {
+	margin:50px auto 50px auto;
+	border-radius: 4px;
+	background-color: #3c82e7;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 5px solid #185cbf;
+	font-family: 'Lato',sans-serif;
+	font-weight: 700;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	font-size: 2em;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.contact-modal-container button:hover {
+	background-color: #00ff00;
+	border-bottom: 5px solid #00cc00;
+}
+
+.contact-modal-container h2 {
+	text-align: left;
+	font-family: 'Titillium Web',sans-serif;
+	font-size: 2.5em;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	padding-top: 20px;
+	border-bottom: 4px solid #ff0000;
+	padding-bottom: 10px;
+}
+
+.contact-modal-container ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.contact-modal-container li {
+	text-align: left;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	font-family: 'Lato',sans-serif;
+	font-size: 2em;
+}
+
+.contact-modal-container li i {
+	color: #3c82e7;
+	text-shadow: none;
+}
+
+.modal-footer .btn {
+	border:1px solid #00b3ff;
+	color: #00b3ff;
+}
+
+.modal-header .close {
+	color: #185cbf;
+}
+
+/* Form Styles */
+
+.fsBody .fsForm, #enquiryModal .modal-body, .fsForm .fsSubmit {
+	background: -webkit-linear-gradient(90deg, #4b6cb7 10%, #182848 90%)!important; /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(90deg, #4b6cb7 10%, #182848 90%)!important; /* FF3.6+ */
+	background:     -ms-linear-gradient(90deg, #4b6cb7 10%, #182848 90%)!important; /* IE10 */
+	background:      -o-linear-gradient(90deg, #4b6cb7 10%, #182848 90%)!important; /* Opera 11.10+ */
+	background:         linear-gradient(90deg, #4b6cb7 10%, #182848 90%)!important; /* W3C */
+	border: none!important;
+}
+
+.fsBody .fsForm .fsLabel {
+	font-family: 'Titillium Web',sans-serif;
+	font-weight: 600;
+	font-size: 1.5em!important;
+	padding-bottom: 10px!important;
+	color: #fff!important;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.fsFieldFocused {
+	background-color: transparent!important; 
+}
+
+.fsBody .fsForm .fsSupporting {
+	color: #fff!important;
+}
+
+.fsField {
+	border-radius: 3px;
+	border:none!important;
+	box-shadow: 0 0 15px rgba(255,255,255,0.8)!important;   
+}
+
+.fsRequiredMarker {
+	color: #fe8c00!important;
+}
+
+.fsSubmit input.fsSubmitButton {
+	background-color: #00ff00!important;
+	border-top: none!important;
+	border-left: none!important;
+	border-right: none!important;
+	border-bottom: 3px solid #00b300!important;
+	color: #fff!important;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	font-size: 1.5em;
+	font-weight: 700!important;
+	padding: 10px 15px 10px 15px!important;
+	border-radius: 4px!important;
+}
+
+/* Footer Section */
+.footer-section {
+	height: 100px;
+	background: -webkit-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* W3C */	
+/*	background:url('../img/featured-texture.jpg');*/
+	box-shadow: 0 0 15px rgba(0,0,0,0.8);   
+	border-top: 2px solid #185cbf;
+}
+
+.footer-section p {
+	color: #fff;
+	text-align: center;
+	padding-top: 35px;
+}
+
+/* Start of Motorcyle Page Styles */
+
+/* Selector Styles */
+
+.selector-container {
+	margin-top: 120px;
+}
+
+/*
+.selector-container .dropdown-toggle {
+	min-width: 380px;
+}
+
+.selector-space {
+	padding-top: 82px; 
+}*/
+
+/*.selector-space button, .selector-space-1 button {
+	font: 'Lato',sans-serif;
+	font-weight: 300;
+}*/
+
+/* Tab Container */
+
+.tab-container {
+	background-color: #000;
+}
+
+/* Start of Careers Page Styles */
+
+.careers-title, .about-title {
+	margin-top: 90px;
+}
+
+.careers-listing .panel-heading {
+	border-bottom: none;
+}
+
+.career-benefits hr, .careers-listing hr {
+	display: block; height: 1px;
+    border: 0; border-top: 1px solid #3c82e7;
+    margin: 1em 0; padding: 0;
+}
+
+.careers-listing .panel-default {
+	border: none;
+}
+
+.careers-listing .panel-default>.panel-heading {
+	background-color: #fff;
+	border: 1px solid #3c82e7;
+	border-radius: 0px;
+}
+
+.careers-listing .panel-title>a {
+	float: right;
+	margin-right: 10px;
+	margin-top: -23px;
+}
+
+.career-location {
+	float: right;
+	margin-right: 30px;
+	color: #3498db;
+	font-weight: 300;
+	margin-top: -15px;
+}
+
+.mitsu-team {
+	height: 300px;
+	background: url('http://mitsukoshimotors.com/wp-content/uploads/2015/03/mitsukoshi-team1.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.mitsu-vpn {
+	height: 300px;
+	background: url('http://mitsukoshimotors.local/wp-content/uploads/2015/08/innovation-is-now.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.team-logos {
+	padding-top:40px;
+	padding-bottom: 20px;
+}
+
+.careers-listing .panel-title {
+	font-family: 'Lato',sans-serif;
+	color: #3c82e7;
+	font-size: 1.2em;
+}
+
+.career-benefits h3, .career-benefits h4, .career-testimonials h3, .careers-listing h3 {
+	font-family: 'Titillium Web',sans-serif;
+	color: #3c82e7;
+	font-size: 2.3em;
+	text-align: center;
+}
+
+.career-benefits h4, .career-testimonials h3 {
+	text-align: left;
+	font-size: 1.5em;
+}
+
+.team-logos img {
+	width: 65%;
+}
+
+.career-benefits .view-positions a {
+	font-family: 'Lato',sans-serif;
+	font-size: 1.3em;
+	color: #fff;
+	background-color: #f36412;
+	border-bottom: 3px solid #c84f0a;
+	padding: 10px 15px 10px 15px;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+.career-benefits .view-positions a:hover {
+	background-color: #00ff00;
+	border-bottom: 3px solid #00b300;
+}
+
+.view-positions {
+	margin-top: 25px;
+	text-align: right;
+}
+
+.career-benefits-copy {
+	margin-top: 20px;
+}
+
+.career-testimonials .carousel-inner {
+	box-shadow: none;
+	height: 200px;
+}
+
+.career-testimonials .container {
+	height: 200px;
+}
+
+.career-testimonials img {
+	width: 40%;
+}
+
+.career-testimonials p {
+	font-family: 'Lato',sans-serif;
+	padding-top: 30px;
+	font-size: 1.2em;
+}
+
+.career-testimonials {
+	margin-bottom: 40px;
+}
+
+.carousel-control.right .fa-caret-right, .carousel-control.left .fa-caret-left {
+	position: absolute;
+	top: 25%;
+	color: rgba(60,130,231,0.9)
+
+}
+
+.carousel-control.right .fa-caret-right {
+	right: 5%;
+}
+
+.carousel-control.left .fa-caret-left {
+	left: 5%;
+}
+
+.career-position {
+	color: #34495e;
+	font-family: 'Lato',sans-serif;
+	font-size: 0.65em;
+	text-transform: uppercase;
+}
+
+.brand-container {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+
+.career-detail, .career-apply {
+	color: #fff!important;
+	padding: 8px 6px;
+	border-radius: 4px;
+	margin-top: -8px;
+}
+
+.career-detail {
+	background-color: #f36412;
+}
+
+.career-apply {
+	background-color: #3c82e7;
+	
+}
+
+.career-detail:hover, .career-apply:hover {
+	text-decoration: none;
+	background-color: #00ff00;
+}
+
+.careers-listing .panel-heading {
+	padding: 24px 26px;
+}
+
+/* About Page Styles */
+
+.about-feature {
+	background: url('http://mitsukoshimotors.com/wp-content/uploads/2015/03/about.jpg');
+	height: 500px; 
+	background-repeat: no-repeat;
+    background-size: 100%;
+    /*background-attachment: fixed;*/
+}
+
+.about-feature {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.about-feature h2 {
+	color: #fff;
+	background-color: rgba(60,130,231,0.8);
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Titillium Web',sans-serif;
+	font-weight: 400;
+	padding: 15px 15px;
+	margin-top: 0px;
+	border-bottom: 1px solid #fff;
+	width: 100%;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.about-main {
+	color: #3c82e7;
+}
+
+.company-profile {
+	margin-top: 98px;
+	margin-left: 40px;
+	margin-right: 40px;
+	background-color: rgba(255,255,255,0.8);
+	border: 1px solid #3c82e7;
+	border-bottom: none;
+}
+
+.company-profile p {
+	color: #3c82e7;
+	font-family: 'Titillium Web',sans-serif;
+	font-weight: 400;
+	font-size: 1.4em;
+}
+
+.company-profile p span {
+	color: #1a67d6;
+	font-size: 0.8em;
+}
+
+.company-profile h3 {
+	font-family: 'Titillium Web',sans-serif;
+	color: #1a67d6;
+	font-size: 1.8em;
+}
+
+.company-profile hr {
+	display: block; height: 1px;
+    border: 0; border-top: 1px solid rgba(60,130,231,0.8);
+    margin: 1em 0; padding: 0;
+}
+
+.about-main p {
+	color: #185cbf;
+	font-family: 'Lato',sans-serif;
+	font-size: 1.2em;
+	margin-bottom: 60px;
+}
+
+.about-main p span {
+	color: #ff0000;
+	font-size: 2.3em;
+	font-weight: 400;
+}
+
+.about-mission .container:first-child {
+	margin-top: 30px;
+}
+
+.about-mission h4 {
+	font-family: 'Titillium Web',sans-serif;
+	color:#ff0000;
+	font-size: 1.7em;
+}
+
+.about-mission p, .about-mission li {
+ 	font-family: 'Lato',sans-serif;
+ 	font-size: 1.2em;
+ 	color:#185cbf;
+}
+
+/* Homepage Modal Boxes(Specifications & Payment Plans) */
+
+/*Specifications*/
+
+.spec-info p {
+	color: #185cbf;
+
+}
+
+.available-color p {
+	color: #185cbf;
+}
+
+#sym-110-specs-modal hr, #jetpower-125-specs-modal hr, .payment-plan-body hr {
+	display: block; height: 1px;
+    border: 0; border-top: 1px solid rgba(60,130,231,0.8);
+    margin: 1em 0; padding: 0;
+}
+
+
+#sym-110-specs-modal .modal-body {
+	background-color: #fff;
+}
+
+#sym-110-specs-modal h4 {
+	color: #ff0000;
+	font-family: 'Lato',sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+}
+
+#sym-110-specs-modal .color-1 p, #sym-110-specs-modal .color-2 p, #sym-110-specs-modal .color-3 p {
+	color: #fff;
+	font-family: 'Titillium Web',sans-serif;
+	text-align: center;
+}
+
+#sym-110-specs-modal .color-1, #sym-110-specs-modal .color-2, #sym-110-specs-modal .color-3 {
+	border-radius: 4px;
+	padding-top: 5px;
+}
+
+#sym-110-specs-modal .color-1, #jetpower-125-specs-modal .color-3 {
+	background-color: #ff0000;
+}
+
+#sym-110-specs-modal .color-2, #jetpower-125-specs-modal .color-1 {
+	background-color: #4645a3;
+}
+
+#jetpower-125-specs-modal .color-2 {
+	background-color: #fbf900;
+}
+
+#sym-110-specs-modal .color-3 {
+	background-color: #000;
+} 
+
+#jetpower-125-specs-modal .color-black {
+	background-color: #000;
+}
+
+#jetpower-125-specs-modal .color-black p {
+	color: #fff;
+}
+
+/* Payment Plan Details */
+
+
+.payment-title, .downpayment-title, .cash-price-modal, .payment-plan-options {
+	color: #3c82e7!important;
+	font-size: 2em;
+	text-shadow: none!important;
+}
+
+.payment-title, .cash-price-modal {
+	font-size: 1.7em!important;
+}
+
+.downpayment-title span, .cash-price-modal span {
+	color: #2ecc71;
+	font-family: 'Lato',sans-serif;
+	font-size: 1.5em;
+}
+
+
+
+
+/* Homepage Modal Boxes End (Specifications & Payment Plans) */
+
+/* Grid CSS */
+
+.view-bike {
+ text-align: left;	
+}
+
+.view-feature img {
+	width: 95%;
+}
+
+.view-style {
+	font-family: 'Titillium Web', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+.view-feature p {
+	font-size: 0.7em!important;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0,0,0,.8);
+	background-color: #29323c;
+	box-shadow:0 0 15px rgba(0,0,0,0.8);
+	width: 95%;
+}
+
+.view-bike .modal-header {
+	border-bottom: 1px solid #3c82e7;
+	font-family: 'Titillium Web',sans-serif;
+	text-transform: uppercase;
+}
+
+.modal-header h4 {
+	font-size: 1.5em;
+	color: #29323c;
+}
+
+.view-bike .modal-footer {
+	border-top: 1px solid #3c82e7;
+}
+
+.down-pay {
+	color: #3c82e7;
+}
+
+.price-color {
+	color: #2ecc71;
+}
+
+.view-price {
+	font-size: 1.2em!important;
+}
+
+.view-link {
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 4px;
+	border: 1px solid #3c82e7;
+	background-color: #3c82e7;
+	font-size: 1.5em;
+	padding: 10px 15px 10px 15px;
+	text-decoration: none;
+	text-shadow: 0 1px 2px rgba(0,0,0,.8);
+}
+
+.view-link:hover, .view-link:focus {
+	text-decoration: none;
+	background-color: #00ff00;
+	color: #fff;
+}
+
+.view-specs {
+	font-family: 'Titillium Web',sans-serif;
+	color: #3c82e7;	
+}
+
+.view-style p, .view-feature p {
+	font-size: 0.6em!important;
+	font-weight: 300!important;
+}
+
+.view-style p {
+	color: #000!important;
+}
+
+.view-feature p {
+	color: #fff!important;
+	height: 85px;
+}
+
+.bike-list {
+	text-align: center;
+	font-family: 'Titillium Web',sans-serif;
+	text-align: left;
+}	
+
+.bike-list h3 {
+	border-bottom: 3px solid #ff0000;
+}
+
+.bike-list h4 {
+	text-transform: uppercase;
+}
+
+.bike-list a {
+	text-align: center!important;
+	border: 1px solid #3c82e7;
+	background-color: #3c82e7;
+	padding: 5px 152px 5px 152px;
+	text-decoration: none;
+	font-family: 'Lato',sans-serif;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	color: #fff;
+	border-radius: 4px;
+}
+
+.bike-list a:hover, .bike-list a:focus {
+	background-color: #00ff00;
+	text-shadow:none;
+}
+
+.view-all-bikes a {
+	text-decoration: none;
+	font-family: 'Lato',sans-serif;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	background-color: #f36412;
+	padding: 10px 20px 10px 20px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	float: right;
+	border-radius: 3px;
+	border-bottom: 3px solid #c84f0a;
+}
+
+/* Footer Styles */
+
+.footer-container {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.mitsu-footer li a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Lato',sans-serif;
+	font-size: 1.1em;
+}
+
+.mitsu-footer li a:hover, .mitsu-footer li a:focus {
+	color: #fe8c00;
+}
+
+.mitsu-footer li:first-of-type {
+	margin-bottom: 15px;
+}
+
+.mitsu-footer li:first-of-type a {
+	font-family: 'Titillium Web',sans-serif;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	font-size: 1.65em;
+}
+
+.mitsu-footer li {
+	list-style: none;
+}
+
+.copy-logo p {
+	color: #00b3ff;
+	padding-left: 35px;
+	font-size: 0.8em;
+}
+
+.copy-logo a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer-background {
+	box-shadow: 0 0 15px rgba(0,0,0,0.8);
+	background: -webkit-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* IE10 */
+	background:      -o-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* Opera 11.10+ */
+	background:         linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* W3C */    
+}
+
+.brief-company-profile {
+	color: #fff;
+	font-family: 'Lato',sans-serif;
+}
+
+/* Storefinder Styles */
+
+.select-area h4 {
+	font-family: 'Titillium Web',sans-serif;
+	color: #fff;
+}
+
+.blue, .select-area ul li a {
+	color: #3c82e7!important;
+}
+
+.select-area ul li {
+	list-style: none;
+	color: #3c82e7;
+}
+
+.select-area ul li a {
+	font-family: 'Lato',sans-serif;
+	font-size: 1.1em;
+}
+
+.select-area .panel-default>.panel-heading {
+	background-color: #3c82e7;
+	border-color: #fff;
+}
+
+.select-area .panel-body {
+	border: 1px solid #3c82e7;
+}
+
+.show-area h4 {
+	font-family: 'Titillium Web',sans-serif;
+	font-size: 1.7em;
+	border-bottom: 1px solid #3c82e7;
+	padding-bottom: 10px;
+}
+
+.shop-spot {
+	border: 1px solid #3c82e7;
+	padding: 5px 5px 10px 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: 'Titillium Web',sans-serif;
+	font-size: 1.1em;
+}
+
+.shop-spot h5, .shop-spot i {
+	color: #f36412;
+}
+
+.shop-spot a {
+	background-color: #f36412;
+	border-radius: 4px;
+	color: #fff;
+	padding: 5px 5px 5px 5px;
+}
+/* Odometer Replacement Styles */
+
+.cd-title {
+  position: relative;
+  height: 160px;
+  line-height: 230px;
+  text-align: center;
+}
+.cd-title h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+b {
+	font-weight: normal!important;
+	font-family: 'Lato',sans-serif!important;
+	letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-title {
+    line-height: 250px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-title {
+    height: 200px;
+    line-height: 300px;
+  }
+  .cd-title h1 {
+    font-size: 3rem;
+  }
+}
+
+.cd-intro {
+  width: 90%;
+  max-width: 768px;
+  text-align: center;
+}
+
+.cd-intro {
+  margin: 0.15em auto;
+}
+@media only screen and (min-width: 768px) {
+  .cd-intro {
+    margin: 0.15em auto;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-intro {
+    margin: 0.15em auto;
+  }
+}
+
+.cd-headline {
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 768px) {
+  .cd-headline {
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cd-headline {
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-headline {
+    font-size: 1.2em;
+  }
+}
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+.no-js .cd-words-wrapper b {
+  opacity: 0;
+}
+.no-js .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}
+
+/* -------------------------------- 
+
+xrotate-2 
+
+-------------------------------- */
+
+.is-visible .blip {
+	font-weight: 300!important;
+	font-family: 'Lato',sans-serif!important;
+}
+
+.cd-headline.rotate-2 .cd-words-wrapper {
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  perspective: 300px;
+}
+.cd-headline.rotate-2 i, .cd-headline.rotate-2 em {
+  display: inline-block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cd-headline.rotate-2 b {
+  opacity: 0;
+}
+.cd-headline.rotate-2 i {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-20px) rotateX(90deg);
+  -moz-transform: translateZ(-20px) rotateX(90deg);
+  -ms-transform: translateZ(-20px) rotateX(90deg);
+  -o-transform: translateZ(-20px) rotateX(90deg);
+  transform: translateZ(-20px) rotateX(90deg);
+  opacity: 0;
+}
+.is-visible .cd-headline.rotate-2 i {
+  opacity: 1;
+}
+.cd-headline.rotate-2 i.in {
+  -webkit-animation: cd-rotate-2-in 0.4s forwards;
+  -moz-animation: cd-rotate-2-in 0.4s forwards;
+  animation: cd-rotate-2-in 0.4s forwards;
+}
+.cd-headline.rotate-2 i.out {
+  -webkit-animation: cd-rotate-2-out 0.4s forwards;
+  -moz-animation: cd-rotate-2-out 0.4s forwards;
+  animation: cd-rotate-2-out 0.4s forwards;
+}
+.cd-headline.rotate-2 em {
+  -webkit-transform: translateZ(20px);
+  -moz-transform: translateZ(20px);
+  -ms-transform: translateZ(20px);
+  -o-transform: translateZ(20px);
+  transform: translateZ(20px);
+}
+
+.no-csstransitions .cd-headline.rotate-2 i {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  opacity: 0;
+}
+.no-csstransitions .cd-headline.rotate-2 i em {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+.no-csstransitions .cd-headline.rotate-2 .is-visible i {
+  opacity: 1;
+}
+
+@-webkit-keyframes cd-rotate-2-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateZ(-20px) rotateX(90deg);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateZ(-20px) rotateX(-10deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(-20px) rotateX(0deg);
+  }
+}
+@-moz-keyframes cd-rotate-2-in {
+  0% {
+    opacity: 0;
+    -moz-transform: translateZ(-20px) rotateX(90deg);
+  }
+  60% {
+    opacity: 1;
+    -moz-transform: translateZ(-20px) rotateX(-10deg);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateZ(-20px) rotateX(0deg);
+  }
+}
+@keyframes cd-rotate-2-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateZ(-20px) rotateX(90deg);
+    -moz-transform: translateZ(-20px) rotateX(90deg);
+    -ms-transform: translateZ(-20px) rotateX(90deg);
+    -o-transform: translateZ(-20px) rotateX(90deg);
+    transform: translateZ(-20px) rotateX(90deg);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateZ(-20px) rotateX(-10deg);
+    -moz-transform: translateZ(-20px) rotateX(-10deg);
+    -ms-transform: translateZ(-20px) rotateX(-10deg);
+    -o-transform: translateZ(-20px) rotateX(-10deg);
+    transform: translateZ(-20px) rotateX(-10deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(-20px) rotateX(0deg);
+    -moz-transform: translateZ(-20px) rotateX(0deg);
+    -ms-transform: translateZ(-20px) rotateX(0deg);
+    -o-transform: translateZ(-20px) rotateX(0deg);
+    transform: translateZ(-20px) rotateX(0deg);
+  }
+}
+@-webkit-keyframes cd-rotate-2-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateZ(-20px) rotateX(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateZ(-20px) rotateX(-100deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateZ(-20px) rotateX(-90deg);
+  }
+}
+@-moz-keyframes cd-rotate-2-out {
+  0% {
+    opacity: 1;
+    -moz-transform: translateZ(-20px) rotateX(0);
+  }
+  60% {
+    opacity: 0;
+    -moz-transform: translateZ(-20px) rotateX(-100deg);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translateZ(-20px) rotateX(-90deg);
+  }
+}
+@keyframes cd-rotate-2-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateZ(-20px) rotateX(0);
+    -moz-transform: translateZ(-20px) rotateX(0);
+    -ms-transform: translateZ(-20px) rotateX(0);
+    -o-transform: translateZ(-20px) rotateX(0);
+    transform: translateZ(-20px) rotateX(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateZ(-20px) rotateX(-100deg);
+    -moz-transform: translateZ(-20px) rotateX(-100deg);
+    -ms-transform: translateZ(-20px) rotateX(-100deg);
+    -o-transform: translateZ(-20px) rotateX(-100deg);
+    transform: translateZ(-20px) rotateX(-100deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateZ(-20px) rotateX(-90deg);
+    -moz-transform: translateZ(-20px) rotateX(-90deg);
+    -ms-transform: translateZ(-20px) rotateX(-90deg);
+    -o-transform: translateZ(-20px) rotateX(-90deg);
+    transform: translateZ(-20px) rotateX(-90deg);
+  }
+}
+
+.black {
+	color: #000!important;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 540px) {
+	.tabs-style-flip nav a span {
+		font-size: 0.7em!important;
+	}
+	.inquire-button a, .detail-button a, .monthly-modal a {
+		padding: 5px 5px!important;
+	}
+	.contact-modal-container h2, .contact-modal-container li {
+		font-size: 1.5em;
+	}
+	.about-main {
+		margin-top: 70px;
+	}
+
+	.about-feature {
+		background: #fff!important;
+	}
+	.career-detail, .career-apply {
+		padding: 3px 3px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.career-location {
+		float: none;
+	}
+	.career-position {
+		line-height: 3;
+	}
+	.careers-listing .panel-title>a {
+		float: none;
+	}
+	.careers-listing .panel-title::after {
+		content: <br><br>
+	}
+	.payment-title, .downpayment-title, .cash-price-modal, .payment-plan-options {
+	font-size: 1.2em;
+	}
+	.spec-value,.spec-info {
+		font-size: 0.7em!important;
+	}
+}
+.table-responsive
+{
+    overflow-x: auto;
+}
+
+@media only screen and (max-width: 768px) {
+	.contact-modal-container button {
+		max-width: 75%!important;
+		padding-left: 10px!important;
+		padding-right: 10px!important;
+	}
+	.dropdown-toggle {
+  	border: 1px solid #3c82e7!important;
+    font-size: 1.4em;
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    max-width: 100%!important;
+  }
+  .is-visible {
+  	letter-spacing: 0px!important;
+  	font-size: 0.8em!important;
+  }
+  .search-selector.btn {
+  	padding: 10px auto;
+  }
+  .featured-mini-p img, .view-feature img {
+  	width: 60%!important;
+  	margin-left: auto!important;
+  	margin-right: auto!important;
+  	margin-top: 20px;
+  }
+  .featured-mini-p p, .view-feature p {
+  	width: 60%!important;
+  	margin-right: auto!important;
+  	margin-left: auto!important;
+  	font-size: 0.6em!important;
+  }
+  #home-slider {
+  	margin-top: 0px;
+  }
+  .bike-list a {
+  	padding: 5px 90px!important;
+  	max-width: 100%!important;
+  }
+  .careers-listing .panel-title span, .panel-title {
+  	font-size: 0.95em!important;
+  }
+  .career-testimonials {
+  	margin-bottom: 30px;
+  }
+  .career-testimonials img {
+  	width: 15%!important;
+  }
+  .navbar-default {
+  	background: -webkit-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* IE10 */
+	background:      -o-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* Opera 11.10+ */
+	background:         linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* W3C */
+  }
+  .navbar-default a {
+  	color: #fff!important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .featured-mini-p img, .view-feature img {
+  	width: 50%!important;
+  	margin-left: auto!important;
+  	margin-right: auto!important;
+  	margin-top: 20px;
+  	display: block!important
+  }
+  .featured-mini-p p, .view-feature p {
+  	width: 50%!important;
+  	margin-right: auto!important;
+  	margin-left: auto!important;
+  }
+  .featured-bike-img img {
+  	width: 65%;
+  }
+  .tabs-style-flip nav a span {
+  	font-size: 0.9em;
+  }
+  .inquire-button a {
+  	float: left;
+  }
+  .pay-plan {
+  	font-size: 0.7em;
+  }
+  .career-testimonials img {
+  	width: 15%!important;
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .search-header h3 {
+  	font-size: 1.7em;
+  }	
+  .dropdown-toggle {
+  	width: 100%;
+  	border: 1px solid #3c82e7!important;
+    font-size: 1.4em;
+  }
+  .inquire-button a, .detail-button a, .monthly-modal a {
+  	padding: 10px 6px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  
+  #home-slider .carousel {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+	#menu-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .dropdown-toggle {
+  	/* min-width: 450px; */
+  	border: 1px solid #3c82e7!important;
+    font-size: 1.4em;
+  }
+  .inquire-button a, .detail-button a, .monthly-modal a {
+  	padding: 10px 21px;
+  }
+  .featured-mini-p img {
+  	width: 98%;
+  	margin-left: none;
+  	margin-right: none;
+  }
+  .featured-mini-p p {
+  	width: 99%;
+  }
+  .featured-bike-img img {
+  	width: 80%;
+  }
+  .monthly-modal a,.inquire-button a {
+  	float: right;
+  }
+  .inquire-button a {
+  	margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .motorcycle-logo img {
+  	width: 90%;
+  }
+  .motorcycle-viewer img {
+  	width: 90%;
+  }
+  .bike-list a {
+  	padding: 5px 130px;
+  }
+}
+
+/* Media Queries End */
+
+.logo-small {
+	background-color: #fff;
+}
+
+.logo-small img {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	width: 100%
+}
+

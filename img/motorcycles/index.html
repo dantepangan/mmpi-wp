@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mituskoshi Motors -  </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Effect CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"> 
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/custom.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type='text/javascript'src="../js/viewportchecker.js"></script>
+	<script type="text/javascript" src="../js/custom.js"></script>
+	<script src="../js/modernizr.custom.js"></script>
+	<script type='text/javascript'src="../js/viewportchecker.js"></script>
+
+	<!--Font awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid" id="menu-container-fluid">
+  	<div id="menu-container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		     </button>
+	    </div>
+	    <div class="collapse navbar-collapse">
+		    <ul class="nav navbar-nav" id="top-nav">
+		    	<li><a href="#" id="mitsulogo"><img src="../img/mitsukoshi-logo.svg" alt="Mitsukoshi Motors Logo"/></a></li> 
+		        <li class="paddy"><a href="../">Home</a></li>
+		        <li class="paddy"><a href="../about">About</a></li>
+				<li class="paddy"><a href="../motorcycles">Motorcycles</a></li>
+		        <li class="paddy"><a href="../careers">Careers</a></li>
+		        <li class="paddy"><a href="../storefinder">Store Finder</a></li>
+		        <li class="paddy"><a data-toggle="modal" data-target="#enquiryModal">Contact</a></li>
+		    </ul>
+	    </div><!-- /.navbar-collapse -->
+	</div><!-- /. container -->    
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- Navigation End -->
+<div class="container-fluid selector-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-md-4">
+					<div class="search-header">
+						<h3>Motorcycles</h3>
+					</div>	
+					<div class="search-selector selector-space-1">
+					<!-- Brand Selector -->
+					    <div class="dropdown">
+						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Choose Type
+						    <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						    <li role="presentation"><a role="menuitem" tabindex="-1" onclick="sendMoped()">Moped/Underbone</a></li>
+						    <li role="presentation" class="divider"></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" onclick="sendScooter()">Scooter</a></li>
+						    <li role="presentation" class="divider"></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" onclick="sendTrike()">Business/Tricycle</a></li>
+						    <li role="presentation" class="divider"></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" onclick="sendSport()">Sport/Backbone</a></li>
+						    <li role="presentation" class="divider"></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" onclick="sendMaxi()">Maxiscooter</a></li>
+						  </ul>
+						</div>
+					</div>
+					<!-- End Brand Selector -->	
+				</div>
+				<div class="col-md-4">
+					<div class="search-selector selector-space">
+					<!-- Brand Selector -->
+					    <div class="dropdown">
+						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Choose by Price
+						    <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						    <li role="presentation"><a role="menuitem" tabindex="-1" onclick="send45()">PHP 30,000 - PHP 45,000</a></li>
+						    <li role="presentation" class="divider"></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" onclick="send60()">PHP 45,000 - PHP 60,000</a></li>
+						    <li role="presentation" class="divider"></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" onclick="send100()">PHP 60,000 - PHP 100,000</a></li>
+						    <li role="presentation" class="divider"></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" onclick="send100plus()">PHP 100,000 +</a></li>
+						  </ul>
+						</div>
+					</div>
+					<!-- End Brand Selector -->	
+				</div>
+				<div class="col-md-4">
+					<div class="search-selector selector-space">
+					<!-- Brand Selector -->
+					    <div class="dropdown">
+						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Choose Displacement (cc)
+						    <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						    <li role="presentation"><a role="menuitem" tabindex="-1" onclick="send100cc()">100cc - 110cc</a></li>
+						    <li role="presentation" class="divider"></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" onclick="send150cc()">110cc - 150cc</a></li>
+						    <li role="presentation" class="divider"></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" onclick="sendmanycc()">150cc+</a></li>
+						  </ul>
+						</div>
+					</div>
+					<!-- End Brand Selector -->	
+				</div>
+			</div>
+			<div class="col-md-12 view-all-bikes">
+				<a href="../motorcycles">View All</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Brand Tabs -->
+<div class="container-fluid brand-container">
+	<div class="container" id="brandtoggle">
+		<section>
+				<div class="tabs tabs-style-linetriangle">
+					<nav>
+						<ul>
+							<li><a href="#section-linetriangle-1"><span><img src="../img/sym-logo.svg"></span></a></li>
+							<li><a href="#section-linetriangle-2"><span><img src="../img/euromotor-logo.svg"></span></a></li>
+						</ul>
+					</nav>
+					<div class="content-wrap">
+						<section id="section-linetriangle-1">
+							<div class="row">
+								<div class="col-md-4 bike-list">
+									<h3>SYM T2-250i</h3>
+									<img src="../img/motothumbs/t2-250.jpg" alt="SYM T2-250i Motorcycle">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Sport/Backbone</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">249.4 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 25,000</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 198,000</span></h4>
+									<br>
+									<a data-toggle="modal" data-target="#t2Modal">View</a>
+								</div>
+								<div class="col-md-4 bike-list">
+									<h3>SYM Bonus-X</h3>
+									<img src="../img/motothumbs/bonus-x.jpg" alt="SYM Bonus X">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Moped/Underbone</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">100 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 2,000</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 42,000</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+								<div class="col-md-4 bike-list">
+									<h3>SYM Bonus 110</h3>
+									<img src="../img/motothumbs/bonus-110.jpg" alt="SYM Bonus-110">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Moped/Underbone</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">108 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 2,000</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 45,000</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 bike-list">
+									<h3>SYM GTS300i Evo</h3>
+									<img src="../img/motothumbs/gts300i.jpg" alt="SYM GTS3000i">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Maxiscooter</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">300 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 122,500</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 245,000</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+								<div class="col-md-4 bike-list">
+									<h3>SYM Wolf 125</h3>
+									<img src="../img/motothumbs/wolf125.jpg" alt="SYM Wolf125">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Business/Tricycle</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">124.6 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 2,300</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 47,000</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+								<div class="col-md-4 bike-list">
+									<h3>SYM Jet Power</h3>
+									<img src="../img/motothumbs/jet-power.jpg" alt="SYM Jet Power">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Scooter</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">124.6 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 4,900</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 68,000</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 bike-list">
+									<h3>SYM Sport Bonus</h3>
+									<img src="../img/motothumbs/sport-bonus.jpg" alt="SYM Sport Bonus">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Moped/Underbone</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">108 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 3,800</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 56,800</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+								<div class="col-md-4 bike-list">
+									<h3>SYM RV1-2</h3>
+									<img src="../img/motothumbs/rv12.jpg" alt="SYM RV12">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Moped/Underbone</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">108 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 2,000</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 52,900</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+								<div class="col-md-4 bike-list">
+									<h3>SYM Joyride200 Evo</h3>
+									<img src="../img/motothumbs/joyride200evo.jpg" alt="SYM Joyride200evo">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Maxiscooter</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">171.2 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 80,000</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 168,000</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 bike-list">
+									<h3>SYM Maxsym400i</h3>
+									<img src="../img/motothumbs/max-sym.jpg" alt="SYM Maxsym 400i">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Moped/Underbone</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">399 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 160,000</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 318,000</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+							</div>
+						</section>
+						<!-- Start Euromotors Grid -->
+						<section id="section-linetriangle-2">
+							<div class="row">
+								<div class="col-md-4 bike-list">
+									<h3>Euromotors Capitol 100</h3>
+									<img src="../img/motothumbs/capitol100.jpg" alt="Euromotors Capitol 100">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Business/Tricylce</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">100 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 3,300</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 45,600</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+								<div class="col-md-4 bike-list">
+									<h3>Euromotors Daan-hari 150</h3>
+									<img src="../img/motothumbs/daanghari.jpg" alt="Euromotors Daan-hari 150">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Business/Tricylce</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">149.4 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 2,300</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 42,800</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+								<div class="col-md-4 bike-list">
+									<h3>Euromotors E1</h3>
+									<img src="../img/motothumbs/e1.jpg" alt="Euromotors E1">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Moped/Underbone</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">110 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 2,000</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 33,800</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 bike-list">
+									<h3>Euromotors Euro Racing 2</h3>
+									<img src="../img/motothumbs/euroracing.jpg" alt="Euromotors Euro Racing 2">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Moped/Underbone</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">125 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 3,000</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 39,800</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+								<div class="col-md-4 bike-list">
+									<h3>Euromotors Eurosport</h3>
+									<img src="../img/motothumbs/eurosport.jpg" alt="Euromotors Eurosport">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Moped/Underbone</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">107 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 2,000</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 35,000</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+								<div class="col-md-4 bike-list">
+									<h3>Euromotors RKS 150</h3>
+									<img src="../img/motothumbs/rks150.jpg" alt="Euromotors RKS 150">
+									<h4><span class="down-pay">[Type:]</span> <span class="price-color">Sport/Backbone</span></h4>
+									<h4><span class="down-pay">[Displacement:]</span> <span class="price-color">149 cc</span></h4>
+									<h4><span class="down-pay">[Downpayment:]</span> <span class="price-color">PHP 3,900</span></h4>
+									<h4><span class="down-pay">[Price:]</span> <span class="price-color">PHP 62,900</span></h4>
+									<br>
+									<a href="#">View</a>
+								</div>
+							</div>
+							<!-- End Euromotors Grid -->	
+						</section>
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+			</section>
+
+	</div>
+</div>	
+</div>
+<!-- End Brandtabs
+ -->
+<!-- Footer -->
+<div class="container-fluid footer-background">
+	<div class="container footer-container">
+		<div class="row">
+			<div class="col-md-2 mitsu-footer">
+				<ul>
+					<li><a href="/motorcycles">Motorcycles</a></li>
+					<li><a href="#">All Motorcylces</a></li>
+					<li><a href="#">Mopeds/Underbone</a></li>
+					<li><a href="#">Scooters</a></li>
+					<li><a href="#">Sport/Backbone</a></li>
+					<li><a href="#">Business/Tricyle</a></li>
+					<li><a href="#">Maxiscooters</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 mitsu-footer">
+				<ul>
+					<li><a href="#">Mitsukoshi Motors Inc.</a></li>
+					<li><a href="#">Disclaimer</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 mitsu-footer">
+				<ul>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Latest News</a></li>
+					<li><a href="#">Visit our Blog</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 mitsu-footer">
+				<ul>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Join Our Team</a></li>
+					<li><a href="#">View Available Careers</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 mitsu-footer">
+				<ul>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Send us a Message</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-9 copy-logo">
+				<p>Copyright&copy;&nbsp;2014 - All Rights Reserved</p>
+			</div>
+			<div class="col-md-3 copy-logo">
+				  <p>powered by <a href="http://luciddreamfoundry.com"><span class="ldf-footer">LUCID<span style="color:#00b3ff">.</span>DREAM<span style="color:#ff0000">.</span>FOUNDRY</span></a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer End -->
+<!-- Modal for Enquiry Form-->
+<div class="modal fade" id="enquiryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Send Us a Message</h4>
+      </div>
+      <div class="modal-body">
+        <script type="text/javascript" src="https://www.formstack.com/forms/js.php?nojquery=1&nojqueryui=1&form=1867040&viewkey=booD7RGnJO&style_version=v3"></script><noscript><a href="https://www.formstack.com/forms/?1867040-booD7RGnJO" title="Online Form">Online Form - Mitsukoshi Form</a></noscript><script type='text/javascript'>if (typeof $ == 'undefined' && jQuery){ $ = jQuery}</script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Motorbike modals -->
+<!-- Modal -->
+<div class="modal fade" id="t2Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content view-bike">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel"><span class="down-pay">[Model:]</span> SYM T2-250i</h4>
+      </div>
+      <div class="modal-body">
+
+        	<div class="row">
+        		<div class="col-md-6">
+        			<img src="../img/motoview/t2/t250-view.jpg" alt="SYM T2-250 Motorbike" />
+        		</div>
+        		<div class="col-md-6">
+    					<div class="col-md-12">
+    					<h4><span class="down-pay view-style">[Downpayment:]</span> <span class="price-color view-price">PHP 25,000</span></h4>
+						<h4><span class="down-pay view-style">[Price:]</span> <span class="price-color view-price">PHP 198,000</span></h4>
+        				</div>
+        				<div class="col-md-12"><span class="down-pay view-style">[Features:]</span></div>
+        				<div class="col-md-4 view-feature">
+        					<img src="../img/motoview/t2/t2-feature1.jpg" alt="engine specifications">
+        					<p>250cc 4V Liquid-Engine</p>
+        				</div>
+        				<div class="col-md-4 view-feature">
+        					<img src="../img/motoview/t2/t2-feature3.jpg" alt="engine specifications">
+        					<p>Radial-Mounted Caliper Wave Disk-brakes </p>
+        				</div>
+        				<div class="col-md-4 view-feature">
+        					<img src="../img/motoview/t2/t2-feature2.jpg" alt="engine specifications">
+        					<p>Blue Light Digital Speedometer</p>
+        				</div>
+        		</div>
+        	</div>
+        	<div class="row">
+        		<div class="col-md-12 down-pay view-style">[Specifications:]</div>
+        		<br>
+        		<div class="col-md-4">
+	        		<p><span class="view-specs">[Type:]</span> 4-stroke Single Cylinder</p>
+	        		<p><span class="view-specs">[Displacement:]</span> 124.6 cc</p>
+	        		<p><span class="view-specs">[Cooling System:]</span> Air</p>
+	        		<p><span class="view-specs">[Fuel System:]</span> Carburetor</p>
+	        		<p><span class="view-specs">[Ignition:]</span> C.D.I.</p>
+	        		<p><span class="view-specs">[Fuel Capacity:]</span> 4.5L</p>
+        		</div>
+        		<div class="col-md-4">
+        			<p><span class="view-specs">[Transmission:]</span> CVT</p>
+	        		<p><span class="view-specs">[Front Suspension:]</span> Telescopic Fork</p>
+	        		<p><span class="view-specs">[Rear Suspension:]</span> Unit Swing Arm</p>
+	        		<p><span class="view-specs">[Front Brake:]</span> Disk 180mm</p>
+	        		<p><span class="view-specs">[Rear Brake:]</span> Drum 130mm</p>
+        		</div>
+        		<div class="col-md-4">
+        				<p><span class="view-specs">[Front Tire:]</span> 80/90 - 14</p>
+        				<p><span class="view-specs">[Rear Tire:]</span> 90/90 - 17</p>
+		        		<p><span class="view-specs">[C x W x H:]</span> 1848 x 690 x 1080</p>
+		        		<p><span class="view-specs">[Wheel Base:]</span> 1290</p>
+		        		<p><span class="view-specs">[Dry Weight:]</span> 105</p>
+        		</div>
+        	</div>
+        	<div class="row">
+        		<div class="col-md-12 down-pay view-style">[Payment Plan:]</div>
+        		<div class="col-md-12">
+        			<table class="table table-bordered">
+        			<tr>
+        				<td>Time to Pay</td>
+        				<td>36 Months</td>
+        				<td>30 Months</td>
+        				<td>24 Months</td>
+        				<td>18 Months</td>
+        				<td>12 Months</td>
+        				<td>6<br> Months</td>
+        			</tr>
+        			<tr>
+        				<td>Monthly Payment:</td>
+        				<td>PHP 2,212</td>
+        				<td>PHP 2,474</td>
+        				<td>PHP 2,868</td>
+        				<td>PHP 3,524</td>
+        				<td>PHP 4,837</td>
+        				<td>PHP 8,774</td>
+        			</tr>
+        		</table>
+        		</div>
+        	</div>
+
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="view-link">Inquire Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../js/cbpFWTabs.js"> </script>
+<script>
+		(function() {
+
+			[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+				new CBPFWTabs( el );
+			});
+
+		})();
+</script>
+<script>
+	function sendMoped() {
+		$('.brand-container').empty();
+		$('.brand-container').load('../motoparameters/mopeds.html');
+	};
+	function sendTrike() {
+		$('.brand-container').empty();
+		$('.brand-container').load('../motoparameters/business.html');
+	};
+	function sendScooter() {
+		$('.brand-container').empty();
+		$('.brand-container').load('../motoparameters/scooters.html');
+	};
+	function sendSport() {
+		$('.brand-container').empty();
+		$('.brand-container').load('../motoparameters/sport.html');
+	};
+	function sendMaxi() {
+		$('.brand-container').empty();
+		$('.brand-container').load('../motoparameters/maxiscooters.html');
+	};
+	function send45() {
+		$('.brand-container').empty();
+		$('.brand-container').load('../motoparameters/45k.html');
+	};
+	function send60() {
+		$('.brand-container').empty();
+		$('.brand-container').load('../motoparameters/60k.html');
+	};
+	function send100() {
+		$('.brand-container').empty();
+		$('.brand-container').load('../motoparameters/100k.html');
+	};
+	function send100plus() {
+		$('.brand-container').empty();
+		$('.brand-container').load('../motoparameters/100plus.html');
+	};
+	function send100cc() {
+		$('.brand-container').empty();
+		$('.brand-container').load('../motoparameters/100cc.html');
+	};
+	function send150cc() {
+		$('.brand-container').empty();
+		$('.brand-container').load('../motoparameters/150cc.html');
+	};
+	function sendmanycc() {
+		$('.brand-container').empty();
+		$('.brand-container').load('../motoparameters/100plus.html');
+	};
+</script>
+</body>
+</html>
